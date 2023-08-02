@@ -19,14 +19,10 @@ while gamePlay:
 
     def chooseCave():
       cave = ''
-  #Looks like you have an unexpected indent here.  Maybe try this:
       while cave != '1' and cave != '2':
-        #while cave != '1' and cave != '2':
             print('Which cave will you go into? (1 or 2)')
             cave = input()
-#Looks like caves is not defined. Maybe you meant this:
       return cave
-    #return caves
 
     def checkCave(chosenCave):
       print('You approach the cave...')
@@ -44,20 +40,14 @@ while gamePlay:
       if chosenCave == str(friendlyCave):
         print('Gives you his treasure!')
       else:
-#I think you might be missing some parentheses for the print function.  Maybe this:
         print('Gobbles you down in one bite!')
-        #print 'Gobbles you down in one bite!'
 
 
     displayIntro()
-#Looks like you have an undefined name.  Maybe this:
     caveNumber = chooseCave()
-#caveNumber = choosecave()
     checkCave(caveNumber)
 
-#You may have a spelling error here.  Maybe this:
     print("Thanks for playing")
-#print("Thanks for planing")
     break
     
   elif play_game =='n':
